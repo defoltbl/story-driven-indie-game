@@ -7,6 +7,8 @@
 
 A story-driven 2D indie game built in Python, blending farming, building, and survival mechanics with combat, trading, and a day/night cycle — inspired by titles like *Stardew Valley*, *Terraria*, and *Staxel*.
 
+**Case study:** [andrii-maksymenko.com/projects/story-driven-indie-game](https://andrii-maksymenko.com/projects/story-driven-indie-game/) – the problem, the key decisions and diagrams of how it works.
+
 ---
 
 ## Overview
@@ -60,6 +62,8 @@ The project is organized into five main packages, each responsible for a distinc
 - **Utils**: Helper functions, timers, and shared utilities used across the game.
 - **main.py**: Entry point of the game.
 
+![Five packages around one game loop](docs/game_structure.png)
+
 ### Key Classes
 
 - `Level` — manages everything placed on the map (objects, layers, collisions) via PyTmx; handles setup, level reset, and shop interaction
@@ -96,8 +100,8 @@ The project is organized into five main packages, each responsible for a distinc
 ### Installation
 
 ```bash
-git clone https://github.com/AndreyMaksimenko/Indie-Game.git
-cd Indie-Game
+git clone https://github.com/defoltbl/story-driven-indie-game.git
+cd story-driven-indie-game
 pip install pygame pytmx
 ```
 
