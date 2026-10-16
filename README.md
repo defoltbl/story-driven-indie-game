@@ -5,7 +5,7 @@
 ![Engine](https://img.shields.io/badge/engine-Pygame-00457C)
 ![Architecture](https://img.shields.io/badge/architecture-Monolithic-lightgrey)
 
-A story-driven 2D indie game built in Python, blending farming, building, and survival mechanics with combat, trading, and a day/night cycle — inspired by titles like *Stardew Valley*, *Terraria*, and *Staxel*.
+A story-driven 2D indie game built in Python, blending farming, building, and survival mechanics with combat, trading, and a day/night cycle – inspired by titles like *Stardew Valley*, *Terraria*, and *Staxel*.
 
 **Case study:** [andrii-maksymenko.com/projects/story-driven-indie-game](https://andrii-maksymenko.com/projects/story-driven-indie-game/) – the problem, the key decisions and diagrams of how it works.
 
@@ -40,16 +40,16 @@ Story-Driven-Indie-Game is a single-player 2D adventure where the player grows c
 | Persistence | Pickle (serialization/deserialization to local `.txt` save files) |
 | IDE | Visual Studio Code |
 | Version control | Git / GitHub |
-| Architecture style | Monolithic — all game logic, state, and rendering run in a single application |
+| Architecture style | Monolithic – all game logic, state, and rendering run in a single application |
 
 ## Design Patterns
 
 The codebase applies several classic design patterns to keep the architecture maintainable and extensible:
 
-- **Game Loop** — drives the core update/render cycle, processing input and refreshing game state every frame
-- **State** — governs how entities (player, animals, enemies) change behavior during execution
-- **Composite** — lets the game treat individual objects and groups of objects (e.g. a tree and the fruit it yields) uniformly
-- **Decorator** — adds new functionality to existing objects (e.g. assigning animals to buildings) without altering their structure
+- **Game Loop** – drives the core update/render cycle, processing input and refreshing game state every frame
+- **State** – governs how entities (player, animals, enemies) change behavior during execution
+- **Composite** – lets the game treat individual objects and groups of objects (e.g. a tree and the fruit it yields) uniformly
+- **Decorator** – adds new functionality to existing objects (e.g. assigning animals to buildings) without altering their structure
 
 ## Project Structure
 
@@ -66,16 +66,16 @@ The project is organized into five main packages, each responsible for a distinc
 
 ### Key Classes
 
-- `Level` — manages everything placed on the map (objects, layers, collisions) via PyTmx; handles setup, level reset, and shop interaction
-- `Player` — handles movement, tool/seed use, animations, collisions, and interaction with animals, enemies, NPCs, and buildings
-- `Overlay` — renders the in-game tool/seed HUD
-- `Menu` — handles the trading/shop interface
-- `Transition` — manages visual transitions between scenes
-- `Rain` / `DayChange` — handle weather and the day/night cycle
+- `Level` – manages everything placed on the map (objects, layers, collisions) via PyTmx; handles setup, level reset, and shop interaction
+- `Player` – handles movement, tool/seed use, animations, collisions, and interaction with animals, enemies, NPCs, and buildings
+- `Overlay` – renders the in-game tool/seed HUD
+- `Menu` – handles the trading/shop interface
+- `Transition` – manages visual transitions between scenes
+- `Rain` / `DayChange` – handle weather and the day/night cycle
 
 ## Requirements
 
-**Functional** (selected highlights — see full specification in project documentation)
+**Functional** (selected highlights – see full specification in project documentation)
 - Start a new game with selectable difficulty
 - Save progress to a local `.txt` file (serialized with Pickle) and load it later
 - Navigate a main menu (new game, load, settings, exit)
@@ -88,7 +88,7 @@ The project is organized into five main packages, each responsible for a distinc
 **Non-functional**
 - Runs as a standalone desktop application
 - Targets Windows 10
-- Fully offline — no internet connection required
+- Fully offline – no internet connection required
 - Simple, intuitive interface usable without prior instructions
 
 ## Getting Started
